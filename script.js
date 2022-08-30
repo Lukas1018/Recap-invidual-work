@@ -71,3 +71,14 @@ const weekDay = weekDays[new Date().getDay()];
 (function greetingFn() {
   console.log(`Hello, Today is ${weekDay}!`);
 })();
+
+const html = document.body;
+
+html.style.background = "blue";
+html.style.margin = "0 auto";
+
+const button = document.createElement("button");
+html.append(button);
+button.innerText = `JS created button`;
+button.classList.add("red");
+button.setAttribute("onclick", 'button.classList.toggle("red")');
